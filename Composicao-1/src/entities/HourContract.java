@@ -1,6 +1,6 @@
 package entities;
 
-import java.sql.Date;
+import java.util.Date;
 
 public class HourContract {
 	
@@ -12,10 +12,10 @@ public class HourContract {
 		
 	}
 
-	public HourContract(Date date, Double valeuPerHour, Integer hour) {
+	public HourContract(Date date, Double valeuPerHour, Integer hours) {
 		this.date = date;
 		this.valuePerHour = valeuPerHour;
-		this.hours = hour;
+		this.hours = hours;
 	}
 
 	public Date getDate() {
@@ -38,8 +38,8 @@ public class HourContract {
 		return hours;
 	}
 
-	public void setHour(Integer hour) {
-		this.hours = hour;
+	public void setHour(Integer hours) {
+		this.hours = hours;
 	}
 	
 	public double totalValue() {
